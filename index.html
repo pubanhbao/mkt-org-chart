@@ -2519,6 +2519,42 @@ body {
       </table>
     </div>
 
+
+    <!-- SOW LINK - TOP BANNER -->
+    <div style="margin-bottom:20px;">
+      <a href="https://pubanhbao.github.io/growth-sow/" target="_blank" rel="noopener noreferrer"
+         style="display:flex;align-items:center;justify-content:space-between;gap:16px;
+                padding:16px 22px;
+                border-radius:var(--radius-lg);
+                background:linear-gradient(135deg, var(--growth) 0%, #e05010 100%);
+                text-decoration:none;cursor:pointer;
+                box-shadow:0 4px 18px rgba(242,102,34,0.28);
+                transition:box-shadow 0.15s, transform 0.15s;"
+         onmouseover="this.style.boxShadow='0 6px 28px rgba(242,102,34,0.45)';this.style.transform='translateY(-2px)'"
+         onmouseout="this.style.boxShadow='0 4px 18px rgba(242,102,34,0.28)';this.style.transform='translateY(0)'">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div style="width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,0.2);
+                      display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:22px;">
+            📋
+          </div>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:3px;letter-spacing:0.01em;">
+              Growth Team — Project Map &amp; Scope of Work
+            </div>
+            <div style="font-size:11px;color:rgba(255,255,255,0.82);line-height:1.5;">
+              Chi tiết summary projects, scope &amp; deliverables của từng role · pubanhbao.github.io/growth-sow
+            </div>
+          </div>
+        </div>
+        <div style="flex-shrink:0;display:flex;align-items:center;gap:6px;
+                    padding:8px 18px;border-radius:20px;
+                    background:rgba(255,255,255,0.18);border:1.5px solid rgba(255,255,255,0.35);
+                    color:#fff;font-size:11.5px;font-weight:700;white-space:nowrap;">
+          Xem chi tiết &nbsp;→
+        </div>
+      </a>
+    </div>
+
     <!-- CHANNEL MODEL -->
     <div class="scroll-section" id="growth-channels">
 <div class="section-header">
@@ -2850,6 +2886,9 @@ body {
     </div>
 
   </div>
+
+
+
 </div><!-- /page-growth -->
 
 
@@ -3438,27 +3477,5 @@ function showTeam(team, btn) {
   btn.classList.add('active-' + team);
 }
 </script>
-
-<script>
-function showTeam(team, el) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('visible'));
-  const target = document.getElementById('page-' + team);
-  if (target) target.classList.add('visible');
-
-  document.querySelectorAll('.team-tab').forEach(tab => {
-    tab.classList.remove(
-      'active-overview',
-      'active-brand',
-      'active-growth',
-      'active-design',
-      'active-collab',
-      'active-funnel'
-    );
-  });
-
-  if (el) el.classList.add('active-' + team);
-}
-</script>
-
 </body>
 </html>
